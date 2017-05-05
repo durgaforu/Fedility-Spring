@@ -10,7 +10,7 @@ import org.springframework.stereotype.Component;
 public class MyAop {
 	@Before("execution(* getCart*(*))")
 	public void m1(JoinPoint jp){
-		System.out.println("--- get method got called from  "+jp.getSignature().getDeclaringTypeName()+"."+jp.getSignature().getName());
+		System.out.println("--- get method got called "+jp.getSignature().getDeclaringTypeName()+"."+jp.getSignature().getName());
 		System.out.println(jp.getStaticPart().getSignature());
 	}
 	
