@@ -1,0 +1,31 @@
+package com.shop.bill;
+
+import com.shop.pricematrix.PriceMatrixImpl;
+
+public class BillingImpl {
+
+	/*
+	 * Design Issues --------------
+	 * 1. Too many dependency obj creations
+	 * 		--> Per comes down, memory leaks
+	 * 
+	 * why Issue?
+	 * -------------
+	 * 	--> Creting Dependency object in the Dependent
+	 * 
+	 * 
+	 * 
+	 */
+
+	public double cartPrice(String[] cart) {
+		//PriceMatrixImpl price = new PriceMatrixImpl();
+
+		double tot = 0.0;
+		for (String itemCode : cart) {
+			tot = tot + price.getItemPrice(itemCode);
+		}
+
+		return tot;
+	}
+
+}

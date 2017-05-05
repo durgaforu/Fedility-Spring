@@ -1,0 +1,20 @@
+package com;
+
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+
+@Configuration
+public class AppLoader {
+
+	@Bean(name="emp")
+	public Employee getEmployee() {
+		return new Employee();
+	}
+	
+	@Bean
+	public Department getDept(){
+		return new Department();
+	}
+	
+
+}

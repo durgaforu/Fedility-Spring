@@ -1,0 +1,16 @@
+package com;
+
+public class Employee {
+	private String empName="Praveen";
+
+	public String getEmpName() {
+		return empName;
+	}
+
+	public void setEmpName(String empName) {
+		this.empName = empName;
+	}
+	
+	
+
+}

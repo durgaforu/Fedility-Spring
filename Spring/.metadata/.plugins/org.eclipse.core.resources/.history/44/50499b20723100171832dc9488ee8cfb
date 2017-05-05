@@ -1,0 +1,15 @@
+package com;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+public class Employee {
+
+	@Autowired
+	private Department dept;
+
+	public void getInfo() {
+		System.out.println("-- Information about Employee");
+		dept.getData();
+	}
+
+}

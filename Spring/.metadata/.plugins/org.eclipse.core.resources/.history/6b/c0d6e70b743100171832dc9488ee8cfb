@@ -1,0 +1,29 @@
+package com;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+
+public class Test {
+
+	public Test() {
+		ApplicationContext ac = new AnnotationConfigApplicationContext(AppLoader.class);
+	}
+	
+	@Autowired
+	static Employee e1;
+	public static void main(String[] args) {
+
+		
+		//Employee e1 = ac.getBean("emp", Employee.class);
+		Employee e2 = ac.getBean("emp", Employee.class);
+		System.out.println(e1.hashCode());
+		System.out.println(e2.hashCode());
+		
+		System.out.println(e1.getDept().hashCode());
+		System.out.println(e2.getDept().hashCode());
+		e1.getInfo();
+		
+
+	}
+}

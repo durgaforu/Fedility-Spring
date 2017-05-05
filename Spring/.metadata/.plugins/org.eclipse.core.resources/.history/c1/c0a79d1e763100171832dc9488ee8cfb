@@ -1,0 +1,16 @@
+package com;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
+@Component
+public class Use {
+
+	@Autowired
+	private Shape sh;
+	
+	public void getShape(){
+		sh.draw();
+	}
+	
+	
+}

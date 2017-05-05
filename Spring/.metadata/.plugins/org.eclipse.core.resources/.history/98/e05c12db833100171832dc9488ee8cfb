@@ -1,0 +1,14 @@
+package com.shop.aop;
+
+import org.aspectj.lang.annotation.Aspect;
+import org.aspectj.lang.annotation.Before;
+
+@Aspect
+public class MyAop {
+
+	@Before
+	public void m1(){
+		
+	}
+	
+}

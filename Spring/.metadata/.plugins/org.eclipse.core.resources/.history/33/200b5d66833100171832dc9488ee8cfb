@@ -1,0 +1,4 @@
+package com.shop.aop;
+public class MyAop {
+
+}

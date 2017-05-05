@@ -1,0 +1,8 @@
+package com;
+
+public class Department {
+	public void getData() {
+		System.out.println("---- Data of Department");
+	}
+
+}

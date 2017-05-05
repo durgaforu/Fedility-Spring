@@ -1,0 +1,15 @@
+package com;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+public class Use {
+
+	@Autowired
+	private Shape sh;
+	
+	public void getShape(){
+		sh.draw();
+	}
+	
+	
+}

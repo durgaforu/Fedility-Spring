@@ -1,0 +1,9 @@
+package com;
+
+public class AppConfig {
+	
+	public Employee getEmployee(){
+		return new Employee();
+	}
+
+}

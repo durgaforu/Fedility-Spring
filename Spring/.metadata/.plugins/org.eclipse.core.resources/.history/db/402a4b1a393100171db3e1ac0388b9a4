@@ -1,0 +1,16 @@
+package com;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
+
+public class App {
+
+	@Autowired
+	@Qualifier(value="c1")
+	private MyInter mi;
+	public void myData(){
+		System.out.println("--- App myData initialized");
+		mi.getInfo();
+	}
+	
+}

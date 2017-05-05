@@ -1,0 +1,12 @@
+package com.shop.aop;
+
+import org.aspectj.lang.annotation.Aspect;
+
+@Aspect
+public class MyAop {
+
+	public void fun1(){
+		
+	}
+	
+}

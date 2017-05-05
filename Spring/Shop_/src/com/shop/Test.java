@@ -1,0 +1,31 @@
+package com.shop;
+
+import com.shop.bill.BillingImpl;
+import com.shop.pricematrix.PriceMatrixImpl;
+import com.shop.pricematrix.Pricematrix;
+
+public class Test {
+
+	public static void main(String[] args) {
+
+		String[] cart1 = { "P001", "P002", "P003" };
+		String[] cart2 = { "P004", "P008" };
+
+		/*
+		 * Create Obj to Dependency
+		 */
+
+		Pricematrix priceMatrix = new PriceMatrixImpl();
+		Pricematrix priceMatrix1 = new PriceMatrixImpl();
+		BillingImpl bill = new BillingImpl();
+
+		bill.setPrice(priceMatrix);
+
+		double tot = bill.cartPrice(cart1);
+		System.out.println("Cart 1 total is  " + tot);
+
+		tot = bill.cartPrice(cart2);
+		System.out.println("Cart 2 total is  " + tot);
+
+	}
+}

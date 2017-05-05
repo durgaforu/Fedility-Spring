@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Extract interface &apos;com.shop.pricematrix.Pricematrix&apos; from &apos;com.shop.pricematrix.PriceMatrixImpl&apos;&#x0D;&#x0A;- Original project: &apos;Shop_&apos;&#x0D;&#x0A;- Original element: &apos;com.shop.pricematrix.PriceMatrixImpl&apos;&#x0D;&#x0A;- Extracted interface: &apos;com.shop.pricematrix.Pricematrix&apos;&#x0D;&#x0A;- Extracted members:&#x0D;&#x0A;     com.shop.pricematrix.PriceMatrixImpl.getItemPrice(...)&#x0D;&#x0A;- Use super type where possible" comments="false" description="Extract interface &apos;Pricematrix&apos;" element1="/src&lt;com.shop.pricematrix{PriceMatrixImpl.java[PriceMatrixImpl~getItemPrice~QString;" flags="589830" id="org.eclipse.jdt.ui.extract.interface" input="/src&lt;com.shop.pricematrix{PriceMatrixImpl.java[PriceMatrixImpl" instanceof="false" name="Pricematrix" replace="true" stamp="1493959372369" version="1.0"/>
+</session>

@@ -1,0 +1,19 @@
+package com;
+
+import javax.annotation.PostConstruct;
+
+public class Employee {
+	private String empName="Praveen";
+
+	@PostConstruct
+	public String getEmpName() {
+		return empName;
+	}
+
+	public void setEmpName(String empName) {
+		this.empName = empName;
+	}
+	
+	
+
+}

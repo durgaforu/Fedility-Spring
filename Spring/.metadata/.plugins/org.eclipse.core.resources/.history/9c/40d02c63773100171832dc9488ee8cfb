@@ -1,0 +1,10 @@
+package com.shop.service;
+
+import org.springframework.stereotype.Service;
+
+@Service(value="billing")
+public class BillingImpl {
+	
+	
+
+}

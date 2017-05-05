@@ -1,0 +1,14 @@
+package com;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+public class App {
+
+	@Autowired
+	private MyInter mi;
+	public void myData(){
+		System.out.println("--- App myData initialized");
+		mi.getInfo();
+	}
+	
+}

@@ -1,0 +1,21 @@
+package com.shop;
+
+import com.shop.bill.BillingImpl;
+
+public class Test {
+
+	public static void main(String[] args) {
+		
+		String[] cart1={"P001","P002","P003"};
+		
+		BillingImpl bill=new BillingImpl();
+		doubel tot=bill.cartPrice(cart1);
+		System.out.println("Cart 1 total is  "+tot);
+		
+		
+		
+		
+		
+		
+	}
+}

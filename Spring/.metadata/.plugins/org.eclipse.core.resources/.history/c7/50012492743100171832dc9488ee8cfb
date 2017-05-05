@@ -1,0 +1,21 @@
+package com;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
+@Component("emp")
+public class Employee {
+
+	private String empName;
+	@Autowired
+	private Department dept;
+
+	public Department getDept() {
+		return dept;
+	}
+
+	public void getInfo() {
+		System.out.println("-- Information about Employee");
+		dept.getData();
+	}
+
+}

@@ -1,0 +1,25 @@
+package com;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+public class Test {
+
+	public static void main(String[] args) {
+
+		System.out.println("--- Main method");
+
+		ApplicationContext ac = new ClassPathXmlApplicationContext("spring.xml");
+
+		Employee e1 = (Employee) ac.getBean("emp");
+		Employee e2 = (Employee) ac.getBean("emp");
+
+		System.out.println("Hash Code: " + e1.hashCode());
+		System.out.println("Hash Code: " + e2.hashCode());
+
+		e1.display();
+		e2.display();
+
+	}
+
+}

@@ -1,0 +1,13 @@
+package com.shop.pricematrix;
+
+import org.springframework.stereotype.Repository;
+
+@Repository(value = "pricematrix")
+public class PriceMatrixImpl {
+
+	
+	public double getItemPrice(String prodId) {
+		return 140.00;
+	}
+
+}

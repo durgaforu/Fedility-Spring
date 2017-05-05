@@ -1,0 +1,15 @@
+package com.shop;
+
+public class Test {
+
+	public static void main(String[] args) {
+		
+		String[] cart1={"P001","P002","P003"};
+		
+		
+		
+		
+		
+		
+	}
+}

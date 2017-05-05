@@ -1,0 +1,37 @@
+package com;
+
+import javax.annotation.PostConstruct;
+import javax.annotation.PreDestroy;
+
+import org.springframework.beans.factory.InitializingBean;
+
+public class Employee implements InitializingBean{
+	
+	@Override
+	public void afterPropertiesSet() throws Exception {
+		System.out.println("---- After Properties");	
+	}
+	
+	
+	private String empName="Praveen";
+
+	public Employee() {
+	System.out.println("--- Employee Object");
+	} 
+	
+	@PostConstruct
+	@PreDestroy
+	public String getEmpName() {
+		System.out.println("------- Post Construct");
+		return empName;
+	}
+
+	@PreDestroy
+	public void setEmpName(String empName) {
+		System.out.println("---- setter got Called");
+		this.empName = empName;
+	}
+	
+	
+
+}

@@ -1,0 +1,26 @@
+package com;
+
+import javax.annotation.PostConstruct;
+import javax.annotation.PreDestroy;
+
+public class Employee {
+	private String empName="Praveen";
+
+	public Employee() {
+	System.out.println("--- Employee Object");
+	} 
+	
+	@PostConstruct
+	@PreDestroy
+	public String getEmpName() {
+		System.out.println("------- Post Construct");
+		return empName;
+	}
+
+	public void setEmpName(String empName) {
+		this.empName = empName;
+	}
+	
+	
+
+}

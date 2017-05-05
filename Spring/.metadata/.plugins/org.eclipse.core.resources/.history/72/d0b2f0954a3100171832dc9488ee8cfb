@@ -1,0 +1,10 @@
+package com.shop.pricematrix;
+
+public class PriceMatrixImpl {
+
+	public double getItemPrice(String itemCode) {
+		// db to fetch data from DB		return 100.00;
+
+	}
+
+}

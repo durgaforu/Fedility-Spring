@@ -1,0 +1,10 @@
+package com;
+
+public class App {
+
+	public void myData(){
+		System.out.println("--- App myData initialized");
+		
+	}
+	
+}
