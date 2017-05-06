@@ -25,21 +25,21 @@ public class UserDaoImpl {
 		System.out.println("---- user Saved to DB");
 	}
 
-	@Transactional
+	//@Transactional
 	public void saveEmployee(Employee emp) {
 		Session ses = sf.getCurrentSession();
 		ses.save(emp);
 		System.out.println("---- emp Saved to DB");
 	}
 
-	@Transactional
+	//@Transactional
 	public void saveDept(Department dept) {
 		Session ses = sf.getCurrentSession();
 		ses.save(dept);
 		System.out.println("---- dept Saved to DB");
 	}
 
-	@Transactional
+	//@Transactional
 	public void removeEmp(Employee emp) {
 		Session ses = sf.getCurrentSession();
 		// Employee e1=(Employee)ses.get(Employee.class, empId);
@@ -47,7 +47,7 @@ public class UserDaoImpl {
 		System.out.println("---- emp Deleted from DB");
 	}
 
-	@Transactional
+	//@Transactional
 	public List<Employee> getEmps(int deptId) {
 		Session ses = sf.getCurrentSession();
 		Department dept = (Department) ses.get(Department.class, deptId);
