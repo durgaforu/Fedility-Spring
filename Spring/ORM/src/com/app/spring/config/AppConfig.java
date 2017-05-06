@@ -22,7 +22,7 @@ public class AppConfig {
 	public static PropertyPlaceholderConfigurer getPropertyPlaceholderConfigurer() {
 		PropertyPlaceholderConfigurer ppc = new PropertyPlaceholderConfigurer();
 		ppc.setLocation(new ClassPathResource("application.properties"));
-		System.out.println("--- properties "+ppc);
+		System.out.println("--- properties Obj "+ppc);
 		ppc.setIgnoreUnresolvablePlaceholders(true);
 		return ppc;
 	}

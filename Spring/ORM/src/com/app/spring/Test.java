@@ -14,8 +14,8 @@ public class Test {
 		ApplicationContext ac=new AnnotationConfigApplicationContext(AppConfig.class);
 		
 		User user=new User();
-		user.setUserName("Divya");
-		user.setPassword("pwd123");
+		user.setUserName("U1");
+		user.setPassword("12345");
 		
 		UserDaoImpl userDao=  ac.getBean("userDao",UserDaoImpl.class);
 		userDao.saveUser(user);

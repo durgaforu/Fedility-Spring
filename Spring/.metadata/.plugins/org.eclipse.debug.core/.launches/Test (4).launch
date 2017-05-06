@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <launchConfiguration type="org.eclipse.jdt.launching.localJavaApplication">
 <listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_PATHS">
-<listEntry value="/Spring-IOC_Shop/src/com/shop/Test.java"/>
+<listEntry value="/AOP_"/>
 </listAttribute>
 <listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_TYPES">
-<listEntry value="1"/>
+<listEntry value="4"/>
 </listAttribute>
 <stringAttribute key="org.eclipse.jdt.launching.MAIN_TYPE" value="com.shop.Test"/>
-<stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="Spring-IOC_Shop"/>
+<stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="AOP_"/>
 </launchConfiguration>

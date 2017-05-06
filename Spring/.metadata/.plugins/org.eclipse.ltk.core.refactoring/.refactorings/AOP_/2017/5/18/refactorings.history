@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring accessors="true" comment="Delete 5 elements from project &apos;AOP_&apos;&#x0D;&#x0A;- Original project: &apos;AOP_&apos;&#x0D;&#x0A;- Original elements:&#x0D;&#x0A;     AOP_/src/com.shop&#x0D;&#x0A;     AOP_/src/com.shop.aop&#x0D;&#x0A;     AOP_/src/com.shop.dao&#x0D;&#x0A;     AOP_/src/com.shop.pricematrix&#x0D;&#x0A;     AOP_/src/com.shop.service&#x0D;&#x0A;- Delete subpackages" description="Delete elements" element1="/src&lt;com.shop.service" element2="/src&lt;com.shop.pricematrix" element3="/src&lt;com.shop.dao" element4="/src&lt;com.shop.config" element5="/src&lt;com.shop.aop" element6="/src&lt;com.shop" element7="/src&lt;com" elements="7" flags="589830" id="org.eclipse.jdt.ui.delete" resources="0" stamp="1494044293939" subPackages="true" version="1.0"/>
+</session>

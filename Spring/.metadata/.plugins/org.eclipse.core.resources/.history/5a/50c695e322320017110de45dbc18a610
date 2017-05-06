@@ -1,0 +1,10 @@
+package com.product.dao;
+
+import org.springframework.stereotype.Repository;
+
+@Repository("empDao")
+public class EmployeeDaoImpl {
+
+	
+	
+}

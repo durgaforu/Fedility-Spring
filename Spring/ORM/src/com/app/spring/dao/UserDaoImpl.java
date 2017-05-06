@@ -14,12 +14,12 @@ public class UserDaoImpl {
 
 	
 	@Autowired
-	private SessionFactory sessionFactory;
+	private SessionFactory sf;
 	
 	@Transactional
 	public void saveUser(User user){
-		Session ses=sessionFactory.getCurrentSession();
-		//ses.save(user);
+		Session ses=sf.getCurrentSession();
+		ses.save(user);
 		System.out.println("---- user Saved to DB");
 	}
 	

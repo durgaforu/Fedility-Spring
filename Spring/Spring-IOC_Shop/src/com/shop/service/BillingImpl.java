@@ -19,4 +19,16 @@ public class BillingImpl {
 		}
 		return tot;
 	}
+	
+	
+	public String testMethod(String p1){
+		if(p1.equals("abcxyz")){
+				throw new RuntimeException();
+		}
+		return "test Method Executed... ";
+	}
+	
+	
+	
+	
 }
