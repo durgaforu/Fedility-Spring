@@ -1,0 +1,24 @@
+package com.app.spring;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+
+import com.app.spring.config.AppConfig;
+import com.app.spring.entities.User;
+
+public class Test {
+
+	public static void main(String[] args) {
+	
+		ApplicationContext ac=new AnnotationConfigApplicationContext(AppConfig.class);
+		
+		User user=new User();
+		user.setUserName("Praveen");
+		user.setPassword("James");
+		
+		User u=  ac.getBean("userDao",User.class);
+		u.
+
+	}
+
+}

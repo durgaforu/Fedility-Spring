@@ -9,9 +9,21 @@ import org.springframework.stereotype.Component;
 @Component
 public class MyAop {
 	@Before("execution(* getCart*(*))")
-	public void m1(JoinPoint jp){
-		System.out.println("--- get method got called from  "+jp.getSignature().getDeclaringTypeName()+"."+jp.getSignature().getName());
+	public void m2(JoinPoint jp) {
+		System.out.println("---- 2");
+		System.out.println("--- get method got called from  " + jp.getSignature().getDeclaringTypeName() + "."
+				+ jp.getSignature().getName());
 		System.out.println(jp.getStaticPart().getSignature());
+
 	}
-	
+
+	@Before("execution(* getCart*(*))")
+	public void m1(JoinPoint jp) {
+		System.out.println("--- 1");
+		System.out.println("--- get method got called from  " + jp.getSignature().getDeclaringTypeName() + "."
+				+ jp.getSignature().getName());
+		System.out.println(jp.getStaticPart().getSignature());
+
+	}
+
 }
