@@ -1,15 +1,13 @@
 package com.app.spring.entities;
 
-import javax.persistence.Basic;
 import javax.persistence.CascadeType;
 import javax.persistence.Entity;
 import javax.persistence.FetchType;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
 import javax.persistence.OneToOne;
-
-import org.hibernate.annotations.Cascade;
-import org.hibernate.engine.internal.CascadePoint;
+import javax.persistence.Transient;
 
 @Entity
 
@@ -19,8 +17,20 @@ public class Employee {
 	private int empId;
 	private String empName;
 	private double salary;
-	@OneToOne(cascade=CascadeType.PERSIST,fetch=FetchType.EAGER)
-	@JoinColumn(name="deptId")
+
+	public Employee(int empId, String empName, double salary) {
+
+		this.empId = empId;
+		this.empName = empName;
+		this.salary = salary;
+	}
+
+	
+	
+	@Transient
+	/*@OneToOne(cascade = CascadeType.PERSIST, fetch = FetchType.EAGER)
+	@JoinColumn(name = "deptId")*/
+	//@ManyToOne
 	private Department dept;
 
 	public Department getDept() {
@@ -53,6 +63,16 @@ public class Employee {
 
 	public void setSalary(double salary) {
 		this.salary = salary;
+	}
+	
+	public Employee() {
+		// TODO Auto-generated constructor stub
+	}
+	public void display(){
+		System.out.println(empId);
+		System.out.println(empName);
+		System.out.println(salary);
+		System.out.println("---------------------");
 	}
 
 }

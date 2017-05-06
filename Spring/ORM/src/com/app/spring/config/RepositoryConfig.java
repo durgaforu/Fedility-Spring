@@ -38,8 +38,11 @@ public class RepositoryConfig {
 	private String hibernateDialect;
 	@Value("${hibernate.show_sql}")
 	private String hibernateShowSql;
+	@Value("${hibernate.format_sql}")
+	private String hibernateFormatSql;
 	@Value("${hibernate.hbm2ddl.auto}")
 	private String hibernateHbm2ddlAuto;
+	
 
 	@Bean()
 	public DataSource getDataSource() {
@@ -82,6 +85,7 @@ public class RepositoryConfig {
 		Properties properties = new Properties();
 		properties.put("hibernate.dialect", hibernateDialect);
 		properties.put("hibernate.show_sql", hibernateShowSql);
+		properties.put("hibernate.format_sql", hibernateFormatSql);
 		properties.put("hibernate.hbm2ddl.auto", hibernateHbm2ddlAuto);
 		System.out.println("--- properties: "+properties);
 		return properties;
