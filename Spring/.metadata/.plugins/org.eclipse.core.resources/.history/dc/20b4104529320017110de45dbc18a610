@@ -1,0 +1,39 @@
+package com.app.spring;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+
+import com.app.spring.config.AppConfig;
+import com.app.spring.dao.UserDaoImpl;
+import com.app.spring.entities.Department;
+import com.app.spring.entities.Employee;
+import com.app.spring.entities.User;
+
+public class Test {
+
+	public static void main(String[] args) {
+	
+		ApplicationContext ac=new AnnotationConfigApplicationContext(AppConfig.class);
+		
+	
+		Employee emp=new Employee();
+		Department dept=new Department();
+		dept.setDeptId(1000);
+		dept.setDeptName("HR");
+		
+		
+		emp.setEmpId(10);
+		emp.setEmpName("James");
+		emp.setSalary(834434);
+		
+		emp.setDept(dept);
+		
+		
+		
+		
+		
+		System.out.println("---- Done ----");
+
+	}
+
+}
