@@ -7,7 +7,9 @@
 <title>Insert title here</title>
 </head>
 <body>
-<h1>Welcome to disp.jsp</h1>
-<h2> Hello  ${ename} </h2>
+<h1>Welcome to Employee Managmenet System</h1> <hr/>
+<h2> Name  ${myEmp.empName} </h2>
+<h2> Salary  ${myEmp.salary} </h2>
+<h2> Designation  ${myEmp.designation} </h2>
 </body>
 </html>
