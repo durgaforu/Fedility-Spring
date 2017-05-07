@@ -1,0 +1,7 @@
+INDEX VERSION 1.3+D:\Tranings\Fedility\Spring\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+1842596990.index
+3066460024.index
+200791577.index
+3585294967.index
+1691793405.index
+2560547383.index

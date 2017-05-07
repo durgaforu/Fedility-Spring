@@ -12,6 +12,7 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.orm.hibernate4.HibernateTransactionManager;
 import org.springframework.orm.hibernate4.LocalSessionFactoryBean;
 
+import com.app.spring.entities.Catalog;
 import com.app.spring.entities.Department;
 import com.app.spring.entities.Employee;
 import com.app.spring.entities.TblTest;
@@ -76,8 +77,8 @@ public class RepositoryConfig {
 		LocalSessionFactoryBean asfb = new LocalSessionFactoryBean();
 		asfb.setDataSource(getDataSource());
 		asfb.setHibernateProperties(getHibernateProperties());
-		asfb.setAnnotatedClasses(User.class,TblTest.class,Employee.class,Department.class);
-		return asfb;
+		asfb.setAnnotatedClasses(User.class,TblTest.class,Employee.class,Department.class,Catalog.class);
+		return asfb;	
 	}
 	
 	@Bean

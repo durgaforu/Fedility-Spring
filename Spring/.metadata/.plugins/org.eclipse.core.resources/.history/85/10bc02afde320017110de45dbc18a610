@@ -1,0 +1,43 @@
+package com.app.spring.dao;
+
+import java.util.List;
+
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Repository;
+import org.springframework.transaction.annotation.Isolation;
+import org.springframework.transaction.annotation.Transactional;
+
+import com.app.spring.entities.Catalog;
+
+@Repository("txn2")
+public class TransactionTest2 {
+
+	@Autowired
+	private SessionFactory sf;
+	Session ses = sf.getCurrentSession();
+
+	@Transactional(isolation = Isolation.READ_UNCOMMITTED, rollbackFor = Exception.class)
+	public void sellerReadUncomitted(Catalog catalog) throws Exception {
+		/*
+		 * Wait the other transaction insert
+		 */
+		System.out.println("Waiting for insert record......");
+		Thread.currentThread().sleep(5000);
+
+		Session ses = sf.getCurrentSession();
+		/*
+		 * ReadRow just inserted
+		 */
+		System.out.println("Read Record");
+		Catalog c = (Catalog) ses.get(Catalog.class, 1);
+		
+		System.out.println("-- Item Name: "+c.getItemName());
+		/*
+		 * Loop catalog
+		 */
+
+	}
+
+}

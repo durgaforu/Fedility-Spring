@@ -1,7 +1,5 @@
 package com.service;
 
-import javax.management.RuntimeErrorException;
-
 import org.springframework.beans.factory.annotation.Autowired;
 
 import com.bank.dao.BankDAO;
