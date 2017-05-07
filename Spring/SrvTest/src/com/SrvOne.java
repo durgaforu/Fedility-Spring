@@ -17,6 +17,7 @@ public class SrvOne extends HttpServlet {
 		
 
 		request.setAttribute("user", "Praveen");
+		request.setAttribute("pws", "834638n");
 
 		RequestDispatcher rd = request.getRequestDispatcher("/one.jsp");
 		rd.forward(request, response);

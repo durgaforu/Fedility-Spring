@@ -1,0 +1,16 @@
+package com.tech.controller;
+
+import org.springframework.stereotype.Controller;
+
+@Controller
+public class MyController {
+
+	public void m1(){
+		System.out.println("---- MyController m1 executed");
+	}
+	
+	public void m2(){
+		System.out.println("---- MyController m2 executed");
+	}
+	
+}

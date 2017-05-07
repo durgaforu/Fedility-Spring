@@ -1,0 +1,22 @@
+package com.tech.controller;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+@Controller
+public class MyController {
+
+	@RequestMapping(value="/one")
+	public String m1(){
+		String empName="James";
+		
+		System.out.println("---- MyController m1 executed");
+	return "disp";
+	}
+	
+	@RequestMapping(value="/two.htm")
+	public void m2(){
+		System.out.println("---- MyController m2 executed");
+	}
+	
+}
